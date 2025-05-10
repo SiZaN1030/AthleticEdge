@@ -28,67 +28,13 @@ const Header = () => {
   }
 
   return (
-  
-   
-    // <header>
-    //   <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-    //     <Container>
-    //       <LinkContainer to='/'>
-    //         <Navbar.Brand>Motor Magic Parts </Navbar.Brand>
-    //       </LinkContainer>
-    //       <Navbar.Toggle aria-controls='basic-navbar-nav' />
-    //       <Navbar.Collapse id='basic-navbar-nav'>
-    //         <Route render={({ history }) => <SearchBox history={history} />} />
-    //         <Nav className='ml-auto'>
-    //           {userInfo && !userInfo.isAdmin ? (
-    //             <LinkContainer to='/cart'>
-    //               <Nav.Link>
-    //                 <i className='fas fa-shopping-cart'></i> Cart
-    //               </Nav.Link>
-    //             </LinkContainer>
-    //           ) : null}
-
-    //           {userInfo ? (
-    //             <NavDropdown title={userInfo.name} id='username'>
-    //               <LinkContainer to='/profile'>
-    //                 <NavDropdown.Item>Profile</NavDropdown.Item>
-    //               </LinkContainer>
-    //               <NavDropdown.Item onClick={logoutHandler}>
-    //                 Logout
-    //               </NavDropdown.Item>
-    //             </NavDropdown>
-    //           ) : (
-    //             <LinkContainer to='/login'>
-    //               <Nav.Link>
-    //                 <i className='fas fa-user'></i> Sign In
-    //               </Nav.Link>
-    //             </LinkContainer>
-    //           )}
-    //           {userInfo && userInfo.isAdmin && (
-    //             <NavDropdown title='Admin' id='adminmenu'>
-    //               <LinkContainer to='/admin/userlist'>
-    //                 <NavDropdown.Item>Users</NavDropdown.Item>
-    //               </LinkContainer>
-    //               <LinkContainer to='/admin/productlist'>
-    //                 <NavDropdown.Item>Products</NavDropdown.Item>
-    //               </LinkContainer>
-    //               <LinkContainer to='/admin/orderlist'>
-    //                 <NavDropdown.Item>Orders</NavDropdown.Item>
-    //               </LinkContainer>
-    //             </NavDropdown>
-    //           )}
-    //         </Nav>
-    //       </Navbar.Collapse>
-    //     </Container>
-    //   </Navbar>
-    // </header>
     <>
     <header className='fixed w-full z-50'>
       <nav class=" border-gray-200 px-4 lg:px-6 p-2 bg-white shadow-sm">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <img width={100} src={logo} alt='logo'/>
+              <img width={200} className="blend-screen" src={logo} alt='logo'/>
             </Navbar.Brand>
           </LinkContainer>
           <div class="flex items-center lg:order-2">
@@ -159,7 +105,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-    {/* <div className='h-[3rem]'/> */}
+    <div className='h-[3rem]'/>
      </>
   )
 }

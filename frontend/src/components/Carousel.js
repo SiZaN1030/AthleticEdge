@@ -25,7 +25,7 @@ export default function Carousel({ slides, autoPlay = true, interval = 5000 }) {
   }, [autoPlay, interval, nextSlide])
 
   return (
-    <div className="relative h-[600px] w-full overflow-hidden">
+    <div className="relative h-[600px] -mt-[3rem] w-full overflow-hidden">
       {slides.map((slide, index) => {
         const isActive = index === currentSlide
 

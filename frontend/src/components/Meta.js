@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To MagicMotor',
+  title: 'Welcome To AthleticEdge',
   description: 'We sell the best products for cheap',
-  keywords: 'electronics, buy electronics, cheap electroincs',
+  keywords: 'Sports wear, buy Sportswears, cheap gears',
 }
 
 export default Meta
